@@ -1,0 +1,27 @@
+# Ignore compiled binaries
+*.exe
+*.dll
+*.so
+*.dylib
+
+# Ignore generated files
+*.o
+*.obj
+*.class
+
+# Ignore build directories
+/build/
+/bin/
+/target/
+
+# Ignore dependencies
+/vendor/
+/node_modules/
+
+# Ignore system-specific files
+.DS_Store
+Thumbs.db
+
+# Ignore environment-specific files
+.env
+.env.*
