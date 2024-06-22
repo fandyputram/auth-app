@@ -1,5 +1,5 @@
-# Dating App
-Simple Dating App Project
+# Auth App
+Simple Auth App Project
 
 ## Tech Stack
 - Golang
