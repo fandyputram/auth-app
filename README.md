@@ -19,12 +19,16 @@ Contains the core application logic, divided into subdirectories:
 Contains mocks for all interface in the project
 
 ## How to run
+Go into your terminal/command/etc and type the command below  
+`./script.sh run`  
+This will build and run the app
+  
+After the apps running you will see  
+`Server is running on port 8080`
 
+## Other script
 `./script.sh build`  
 Build the app
-
-`./script.sh run`  
-Build and run the app
 
 `./script.sh test`  
 Run all unit test
