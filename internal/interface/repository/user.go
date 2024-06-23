@@ -19,6 +19,9 @@ type userImpl struct {
 	mu      sync.RWMutex
 }
 
+type Options struct {
+}
+
 func NewUserRepository() UserRepository {
 	return &userImpl{
 		users:   make(map[string]*d.User),

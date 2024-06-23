@@ -15,6 +15,8 @@ Contains the core application logic, divided into subdirectories:
 -`repository/`: Defines data access interfaces and implementations.  
 -`handler/`: Handles HTTP requests and responses.  
 -`utils/`: Utility functions or helper code.
+### **`mocks/`**
+Contains mocks for all interface in the project
 
 ## How to run
 
