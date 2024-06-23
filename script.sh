@@ -31,10 +31,10 @@ test_app() {
 generate_mock() {
     echo "Generating mocks..."
     # Generate Usecase mocks
-    mockgen -source=internal/usecase/auth.go -destination=mocks/mock_usecase_auth.go -package=mocks
+    mockgen -source=internal/usecase/auth.go -destination=mocks/usecase/mock_usecase_auth.go -package=mocks
 
     # Generate Repository mocks
-    mockgen -source=internal/interface/repository/user.go -destination=mocks/mock_repository_user.go -package=mocks
+    mockgen -source=internal/interface/repository/user.go -destination=mocks/repository/mock_repository_user.go -package=mocks
 }
 
 # Main script logic

@@ -15,9 +15,13 @@ type authImpl struct {
 	userRepository r.UserRepository
 }
 
+type Options struct {
+	UserRepository r.UserRepository
+}
+
 // NewAuthUseCase creates a new instance of authUseCase
-func NewAuthUseCase(userRepo r.UserRepository) AuthUsecase {
+func NewAuthUseCase(opt *Options) AuthUsecase {
 	return &authImpl{
-		userRepository: userRepo,
+		userRepository: opt.UserRepository,
 	}
 }

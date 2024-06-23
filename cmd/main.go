@@ -15,7 +15,9 @@ func main() {
 	userRepository := repository.NewUserRepository()
 
 	// Initialize use cases
-	authUseCase := usecase.NewAuthUseCase(userRepository)
+	authUseCase := usecase.NewAuthUseCase(&usecase.Options{
+		UserRepository: userRepository,
+	})
 
 	// Initialize HTTP handlers
 	authHandler := handler.NewAuthHandler(authUseCase)
