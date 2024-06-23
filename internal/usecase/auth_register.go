@@ -1,4 +1,4 @@
-package auth
+package usecase
 
 import (
 	d "auth-app/internal/domain"
